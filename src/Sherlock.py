@@ -310,7 +310,7 @@ def model_predict(X, y, y_hint, surrogate_type, kernel, num_restarts, ted_scale,
 class Sherlock:
 
     def __init__(self,
-                 n_init=2,
+                 n_init=5,
                  budget=None,
                  surrogate_type="rbfthin_plate",
                  kernel="matern",
