@@ -6,5 +6,5 @@ Tested with Python 3.6.5 on Linux Ubuntu. Use the `main.py` file as a starting p
 
 You can also use a Jupyter notebook, see `Example.ipynb`.
 
-Design spaces are organized in CSV files; the objectives must be maximized.
+Design spaces are organized in CSV files; the objective values in the input file will be minimized.
 
