@@ -97,7 +97,7 @@ def main():
         os.environ['MKL_THREADING_LAYER'] = 'SEQUENTIAL'
 
     # Then import libraries
-    from sherlock import Sherlock
+    from _sherlock import Sherlock
     from utils import adrs, read_design_space
     import numpy as np
     from sklearn.preprocessing import PolynomialFeatures, scale
