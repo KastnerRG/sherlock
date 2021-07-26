@@ -7,10 +7,10 @@ from scipy.stats import entropy
 
 from pygmo import hypervolume
 
-from SampleSelection import TED
-from utils import adrs, prpt, approximate_pareto, compute_scores
-from RBF import *
-from MAB import MultiArmedBandit
+from .SampleSelection import TED
+from .utils import adrs, prpt, approximate_pareto, compute_scores
+from .RBF import *
+from .MAB import MultiArmedBandit
 
 import multiprocessing as mp
 import warnings

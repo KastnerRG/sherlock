@@ -1,7 +1,7 @@
 
 import numpy as np
 import os
-import pareto
+import .pareto
 
 
 
