@@ -243,7 +243,7 @@ def model_predict(X, y, y_hint, surrogate_type, kernel, num_restarts, ted_scale,
                 raise RuntimeError("HODLR GP is only compatible with Matern32 kernel right now.")
             surrogate_f = hodlr.GP(kernel=final_kernel)
         elif surrogate_type == "randomforest":
-            import .RandomForest
+            from . import RandomForest
             surrogate_f = RandomForest.RandomForestRegressor2(n_estimators=100)
         elif surrogate_type.startswith("pymc3"):
             import pymc3_models
