@@ -12,7 +12,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run the Sherlock algorithm")
 
     sherlock_group = parser.add_argument_group("Sherlock")
-    sherlock_group.add_argument("-i", "--input-file", default='../example_data/slambench_orbslam2.csv',
+    sherlock_group.add_argument("-i", "--input-file", default='./example_data/slambench_orbslam2.csv',
                             help='Path to the input file (default: %(default)s)')
     sherlock_group.add_argument("-nis", "--num-init-samples", default=2, type=int,
                             help='Number of initial samples (default: %(default)s)')
@@ -98,7 +98,7 @@ def main():
 
     # Then import libraries
     from sherlock import Sherlock
-    from utils import adrs, read_design_space
+    from sherlock.utils import adrs, read_design_space
     import numpy as np
     from sklearn.preprocessing import PolynomialFeatures, scale
 
