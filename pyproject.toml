@@ -5,22 +5,23 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.10"
-seaborn = "^0.11.1"
-matplotlib = "^3.4.2"
+python = ">=3.8,<3.9"
+seaborn = "^0.11.2"
+matplotlib = "^3.5.0"
 Theano = "^1.0.5"
-pymc3 = "^3.11.2"
-scikit-learn = "^0.22.0"
-numpy = ">=1.19.2,<1.20.0"
+pymc3 = "^3.11.4"
+scikit-learn = "^1.0.1"
+numpy = "^1.21.4"
 pygmo = "^2.16.1"
-scipy = "^1.7.0"
+scipy = "^1.7.2"
 dcor = "^0.5.3"
 GPy = "^1.10.0"
-gpflow = "^2.2.1"
+gpflow = "^2.3.0"
+joblib = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
-ipykernel = "^5.5.5"
+pytest = "^6.2.5"
+ipykernel = "^6.5.1"
 
 [build-system]
 requires = ["setuptools", "poetry-core>=1.0.0"]
