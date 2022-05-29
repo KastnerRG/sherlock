@@ -1,7 +1,7 @@
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.utils.validation import check_is_fitted
-from sklearn.externals.joblib import Parallel, delayed
-from sklearn.ensemble.base import BaseEstimator, _partition_estimators
+from joblib import Parallel, delayed
+from sklearn.ensemble._base import _partition_estimators
 import threading
 import numpy as np
 
