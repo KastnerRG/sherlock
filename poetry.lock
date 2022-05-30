@@ -972,18 +972,6 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
-name = "pygmo"
-version = "2.16.1"
-description = "Parallel optimisation for Python"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-cloudpickle = "*"
-numpy = "*"
-
-[[package]]
 name = "pymc3"
 version = "3.11.4"
 description = "Probabilistic Programming in Python: Bayesian Modeling and Probabilistic Machine Learning with Theano"
@@ -1518,7 +1506,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.10"
-content-hash = "0e6ab564615857feb58ea7cd40a90cb7234827a2d1ae22b4728ce31994a992c1"
+content-hash = "d8ff8c1b40c93c43b45c8414064fab6db6c2b0245fe3fc2f5b5db2da56df9258"
 
 [metadata.files]
 absl-py = [
@@ -2387,11 +2375,6 @@ pycparser = [
 pygments = [
     {file = "Pygments-2.12.0-py3-none-any.whl", hash = "sha256:dc9c10fb40944260f6ed4c688ece0cd2048414940f1cea51b8b226318411c519"},
     {file = "Pygments-2.12.0.tar.gz", hash = "sha256:5eb116118f9612ff1ee89ac96437bb6b49e8f04d8a13b514ba26f620208e26eb"},
-]
-pygmo = [
-    {file = "pygmo-2.16.1-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:56b47df8fadf29e7177858e7e7f2340d823854563a0de62ee7c1ccedc288e8ba"},
-    {file = "pygmo-2.16.1-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:857b57adfe8da346fff210ae6a0897f68025d927271f792a4bea8176a2d82a25"},
-    {file = "pygmo-2.16.1-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:e8c929f76816dad775f42935089d54928ca761f0ed7c9beeda9fe929c6e3938b"},
 ]
 pymc3 = [
     {file = "pymc3-3.11.4-py3-none-any.whl", hash = "sha256:cd560788c522df16f88467f9195412f6052a724ced5eb6c98bbfea5dbcafe8b1"},
