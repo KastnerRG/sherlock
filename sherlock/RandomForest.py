@@ -72,6 +72,9 @@ class RandomForestRegressor2(RandomForestRegressor):
             ypred_mean = np.mean(y_pred, axis=0)
             ypred_std  = np.std(y_pred, axis=0)
 
+            if ypred_mean.ndim == 1: ypred_mean = np.expand_dims(ypred_mean, axis=1)
+            if ypred_std.ndim == 1: ypred_std = np.expand_dims(ypred_std, axis=1)
+
             if len(ypred_std.shape) > 1:
                 ypred_std = np.max(ypred_std, 1)
 
