@@ -286,6 +286,7 @@ def model_predict(X, y, y_hint, surrogate_type, kernel, num_restarts, ted_scale,
 
         ypredict, ypredict_std = surrogate_f.predict(X_predict, return_std=True)
 
+        if ypredict.ndim == 1: np.expand_dims(ypredict, axis=1)
 
         if ypredict.shape[1] > y.shape[1]:
             ypredict = ypredict[:, :-1]
