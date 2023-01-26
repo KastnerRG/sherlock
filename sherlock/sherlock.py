@@ -492,7 +492,7 @@ class Sherlock:
         while len(known_idx) < self.budget:
             i_sample += 1
 
-            unknown_mask = np.ones(X.shape[0], np.bool)
+            unknown_mask = np.ones(X.shape[0], bool)
             unknown_mask[known_idx] = 0
             X_mysterious = X[unknown_mask, :]
             y_mysterious = y[unknown_mask, :]
