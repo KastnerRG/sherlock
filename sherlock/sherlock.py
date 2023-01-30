@@ -211,7 +211,7 @@ def model_predict(X, y, y_hint, surrogate_type, kernel, num_restarts, ted_scale,
     elif surrogate_type == "only":
         surrogate_f = None
         ypredict = np.copy(y_hint)
-        ypredict_std = np.ones(ypredict.shape[0], dtype=np.float)
+        ypredict_std = np.ones(ypredict.shape[0], dtype=float)
 
     # Other surrogate models
     else:

@@ -9,7 +9,7 @@ def compute_scores(y, rows, margin=0):
     ndrange = np.ptp(y, axis=0) * margin
     total_sum = np.sum(y, axis=0)
     nrows = y.shape[0]
-    scores = np.empty(len(rows), dtype=np.float)
+    scores = np.empty(len(rows), dtype=float)
     for i, r in enumerate(rows):
         scores[i] = np.sum(r * nrows - total_sum + ndrange * (nrows - 1))
     return scores
