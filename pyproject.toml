@@ -6,22 +6,22 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.10"
-seaborn = "^0.11.1"
-matplotlib = "^3.5.0"
-Theano = "^1.0.5"
-pymc3 = "^3.11.2"
-scikit-learn = "1.0.2"
-numpy = "^1.19.0"
-pygmo = "^2.16.1"
-scipy = "^1.7.2"
-dcor = "^0.5.3"
-GPy = "^1.10.0"
-gpflow = "^2.3.0"
-joblib = "^1.1.0"
+seaborn = ">=0.11.1"
+matplotlib = ">=3.5.0"
+Theano = ">=1.0.5"
+pymc3 = ">=3.11.2"
+scikit-learn = ">=1.0.2"
+numpy = ">=1.19.0"
+pygmo = ">=2.16.1"
+scipy = ">=1.7.2"
+dcor = ">=0.5.3"
+GPy = ">=1.10.0"
+gpflow = ">=2.3.0"
+joblib = ">=1.1.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.5"
-ipykernel = "^6.5.1"
+pytest = ">=6.2.5"
+ipykernel = ">=6.5.1"
 
 [build-system]
 requires = ["setuptools", "poetry-core>=1.0.0"]
