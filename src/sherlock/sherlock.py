@@ -380,7 +380,6 @@ class Sherlock:
 
         if "dcor" in self.output_stats or "model" in self.output_stats:
             import dcor
-            from dcor._dcor_internals import _distance_matrix
             import scipy.cluster.hierarchy as sch
             from sklearn.cluster import KMeans
         

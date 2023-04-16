@@ -1,28 +1,50 @@
-[tool.poetry]
-name = "sherlock"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
-
 [tool.poetry.dependencies]
-python = ">=3.8,<3.10"
-seaborn = ">=0.11.1"
-matplotlib = ">=3.5.0"
-Theano = ">=1.0.5"
-pymc3 = ">=3.11.2"
-scikit-learn = ">=1.0.2"
-numpy = ">=1.19.0"
-pygmo = ">=2.16.1"
-scipy = ">=1.7.2"
-dcor = ">=0.5.3"
-GPy = ">=1.10.0"
-gpflow = ">=2.3.0"
-joblib = ">=1.1.0"
 
-[tool.poetry.dev-dependencies]
-pytest = ">=6.2.5"
-ipykernel = ">=6.5.1"
+#[tool.poetry.dev-dependencies]
+#pytest = ">=6.2.5"
+#ipykernel = ">=6.5.1"
 
 [build-system]
-requires = ["setuptools", "poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sherlock"
+authors = [
+    {name = "Quentin Gautier", email = ""},
+    {name = "Alric Althoff", email = ""},
+    {name = "Christopher L. Crutchfield", email = "ccrutchf@ucsd.edu"},
+    {name = "Ryan Kastner", email = ""}
+]
+description = "My package description"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["one", "two"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "seaborn >=0.11.1",
+    "matplotlib>=3.5.0",
+    "Theano>=1.0.5",
+    "pymc3>=3.11.2",
+    "scikit-learn>=1.0.2",
+    "numpy>=1.19.0",
+    "pygmo>=2.16.1",
+    "scipy>=1.7.2",
+    "dcor>=0.5.3",
+    "GPy>=1.10.0",
+    "gpflow>=2.3.0",
+    "joblib>=1.1.0",
+    "ipython>=6.5.1"
+]
+dynamic = ["version"]
+
+#[project.optional-dependencies]
+#pdf = ["ReportLab>=1.2", "RXP"]
+#rest = ["docutils>=0.3", "pack ==1.1, ==1.3"]
+
+#[project.scripts]
+#my-script = "my_package.module:function"
