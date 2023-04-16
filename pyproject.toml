@@ -11,10 +11,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sherlock"
 authors = [
-    {name = "Quentin Gautier", email = ""},
-    {name = "Alric Althoff", email = ""},
+    {name = "Quentin Gautier", email = "qkgautier@gmail.com"},
+    {name = "Alric Althoff", email = "alric.althoff@gmail.com"},
     {name = "Christopher L. Crutchfield", email = "ccrutchf@ucsd.edu"},
-    {name = "Ryan Kastner", email = ""}
+    {name = "Ryan Kastner", email = "kastner@ucsd.edu"}
 ]
 description = "My package description"
 readme = "README.md"
@@ -38,7 +38,8 @@ dependencies = [
     "GPy>=1.10.0",
     "gpflow>=2.3.0",
     "joblib>=1.1.0",
-    "ipython>=6.5.1"
+    "ipython>=6.5.1",
+    "pymc3-models>=2.1.0"
 ]
 dynamic = ["version"]
 
