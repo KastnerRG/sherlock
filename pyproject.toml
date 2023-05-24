@@ -35,7 +35,7 @@ dependencies = [
     "pygmo>=2.16.1",
     "scipy>=1.7.2",
     "dcor>=0.5.3",
-    "GPy==1.10.0",
+    "GPy @ git+https://github.com/SheffieldML/GPy.git",
     "gpflow>=2.3.0",
     "joblib>=1.1.0",
     "ipython>=6.5.1",
