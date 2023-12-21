@@ -17,7 +17,6 @@ class RandomForestRegressor2(RandomForestRegressor):
                  max_features=1.0,
                  max_leaf_nodes=None,
                  min_impurity_decrease=0.,
-                 min_impurity_split=None,
                  bootstrap=True,
                  oob_score=False,
                  n_jobs=1,

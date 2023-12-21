@@ -230,3 +230,5 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,python
 {"mode":"full","isActive":false}
+
+known_value_*.txt
