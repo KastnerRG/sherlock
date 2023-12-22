@@ -380,9 +380,15 @@ class Sherlock:
 
         if "dcor" in self.output_stats or "model" in self.output_stats:
             import dcor
-            from dcor._dcor_internals import _distance_matrix
+            from dcor._dcor_internals import _distance_matrix_generic, double_centered
             import scipy.cluster.hierarchy as sch
             from sklearn.cluster import KMeans
+
+            
+            def _distance_matrix(x, exponent=1):
+                """Compute the double centered distance matrix given a matrix."""
+                return _distance_matrix_generic(x, centering=double_centered,
+                                                exponent=exponent)
         
 
         # Known indexes at start

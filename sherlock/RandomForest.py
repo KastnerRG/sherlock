@@ -42,7 +42,7 @@ class RandomForestRegressor2(RandomForestRegressor):
             verbose=verbose,
             warm_start=warm_start,
             ccp_alpha=ccp_alpha,
-            max_samples=max_samples,
+            max_samples=max_samples
         )
 
     def predict(self, X, return_std=False):

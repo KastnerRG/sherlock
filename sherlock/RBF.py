@@ -53,7 +53,7 @@ class RbfInterpolator:
                 rcond = 1/np.linalg.cond(K)
                 if rcond > 1e-10: # If the matrix is not singular, (i.e. most of the time)
                     try:
-                        nodes = linalg.solve(K, self._y_train[tri], sym_pos=True)
+                        nodes = linalg.solve(K, self._y_train[tri], assume_a="sym")
                     except linalg.LinAlgError: pass
                 if nodes is None:
                     nodes = linalg.lstsq(K, self._y_train[tri])[0]
@@ -95,7 +95,7 @@ class RbfInterpolator:
         rcond = 1/np.linalg.cond(self.K)
         if rcond > 1e-10:
             try:
-                self.nodes = linalg.solve(self.K, self._y_train, sym_pos=True)
+                self.nodes = linalg.solve(self.K, self._y_train, assume_a="sym")
             except linalg.LinAlgError: pass
         if nodes is None:
             self.nodes = linalg.lstsq(self.K, self._y_train)[0]
